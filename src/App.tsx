@@ -9,6 +9,7 @@ import { Hero } from './components/Hero';
 import { StatsBanner } from './components/StatsBanner';
 import { DashboardPreview } from './components/DashboardPreview';
 import { CoreModules } from './components/CoreModules';
+import { AutomationInAction } from './components/AutomationInAction';
 import { Workflow } from './components/Workflow';
 import { Testimonials } from './components/Testimonials';
 import { SystemRequirements } from './components/SystemRequirements';
@@ -40,6 +41,9 @@ export default function App() {
 
         {/* Core Modules Grid */}
         <CoreModules />
+
+        {/* Automation in Action: Video Demonstration Showcase */}
+        <AutomationInAction />
 
         {/* 4-Step Automation Workflow */}
         <Workflow />

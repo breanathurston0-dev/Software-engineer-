@@ -1,3 +1,16 @@
+export interface FeatureCapacity {
+  headline: string;
+  rate: string;
+  limit: string;
+  description: string;
+}
+
+export interface TagDetail {
+  title: string;
+  description: string;
+  capacity: string;
+}
+
 export interface FeatureModule {
   id: string;
   title: string;
@@ -8,6 +21,8 @@ export interface FeatureModule {
   description: string;
   icon: string;
   tags: string[];
+  tagDetails?: Record<string, TagDetail>;
+  capacity?: FeatureCapacity;
   color: string;
   bgColor: string;
   borderColor: string;

@@ -9,7 +9,8 @@ import {
   HelpCircle, 
   DollarSign, 
   Cpu, 
-  Sliders
+  Sliders,
+  Play
 } from 'lucide-react';
 import { CONTACT_INFO } from '../data/fbmData';
 
@@ -69,6 +70,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenHostelModal }) => {
               className="px-3 py-1.5 text-sm font-semibold text-slate-600 hover:text-blue-600 rounded-lg hover:bg-slate-100 transition-colors"
             >
               Dashboard
+            </a>
+            <a 
+              href="#automation-demo" 
+              className="px-3 py-1.5 text-sm font-semibold text-slate-600 hover:text-blue-600 rounded-lg hover:bg-slate-100 transition-colors flex items-center gap-1"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              <span>Demo</span>
             </a>
             <a 
               href="#workflow" 
@@ -162,6 +170,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenHostelModal }) => {
           >
             <Layers className="w-4 h-4 text-blue-600" />
             <span>Live Dashboard</span>
+          </a>
+          <a
+            href="#automation-demo"
+            onClick={() => setMobileMenuOpen(false)}
+            className="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-lg"
+          >
+            <Play className="w-4 h-4 text-emerald-600" />
+            <span>Automation Demo</span>
           </a>
           <a
             href="#workflow"
